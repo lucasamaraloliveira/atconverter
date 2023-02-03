@@ -1,5 +1,40 @@
-input {
-  
+input[type="file"] {
+display: none;
+}
+input[type="file"]:hover {
+  opacity: 0.7;
+  }
+.custom-input {
+  padding: 10px;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+}
+
+.custom-input button {
+ background-color: transparent;
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+.result-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.base64-result {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.custom-file-upload {
+  background-color: #009bdb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
 }
 
 p {
