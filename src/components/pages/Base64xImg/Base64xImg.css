@@ -1,0 +1,77 @@
+.StyleImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+    
+  .teste {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  textarea {
+    resize: none;
+    border-color: #009bdb;
+  }
+  textarea:focus {
+    border-color: #009bdb;
+    }
+ 
+
+  .btn-generator {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #009bdb;
+    color: #ffffff;
+    cursor: pointer;
+    width:10rem;
+  }
+
+  .btn-download {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #00856F;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .btn-download:disabled {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #DCE9E2;
+    color: #ffffff;
+  }
+
+  .btn-clear {
+    border-radius: 2px;
+    border: 1px transparent ;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #C92A2A;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .btn-clear:disabled {
+    border-radius: 2px;
+    border: 1px transparent ;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #FFE3E3;
+  }
+  button:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+
+  
