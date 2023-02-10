@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import pdfjsLib from 'pdfjs-dist/web/pdf_viewer';
 
 
 const PdfToImage = () => {
