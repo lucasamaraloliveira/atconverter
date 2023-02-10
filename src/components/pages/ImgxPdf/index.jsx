@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import './ImgxPdf.css';
+import './imgxPdf.css';
 import Logo from '../../../assets/logo.svg';
 
 const ImageToPdfConverter = () => {
