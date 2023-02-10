@@ -15,8 +15,8 @@ const Navbar = () => {
                <li ><Link className="Link-align" to="/Base64xImg"><img className="menu-icon" src={Base64xImg} alt="" /> Base64 x Img</Link></li>
                <li ><Link className="Link-align" to="/ImgxBase64"><img src={ImgxBase64} alt="" />Img x Base64</Link></li>
                <li ><Link className="Link-align" to="/ImgxPdf"><img src={ImgxBase64} alt="" />Img x PDF</Link></li>
-               <li ><Link className="Link-align" to="/PdfxImg"><img src={ImgxBase64} alt="" />PDF x Img</Link></li>
-               <li ><Link className="Link-align" to="/PdfxImg"><img src={Base64xImg} alt="" />Contato</Link></li> 
+               {/* <li ><Link className="Link-align" to="/PdfxImg"><img src={ImgxBase64} alt="" />PDF x Img</Link></li> */}
+               {/* <li ><Link className="Link-align" to="/PdfxImg"><img src={Base64xImg} alt="" />Contato</Link></li>  */}
              </ul>
            </nav>
            
