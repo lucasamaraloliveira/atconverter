@@ -3,6 +3,7 @@ import Home from './components/pages/Home';
 import Base64xImg from './components/pages/Base64xImg';
 import ImageToBase64 from './components/pages/ImgxBase64';
 import ImageToPDF from './components/pages/ImgxPdf';
+import PdfToImage from './components/pages/PdfxImg';
 import Navbar from './components/layout/Navbar';
 
 import './App.css'
@@ -17,6 +18,9 @@ function App() {
       <Route path="/base64ximg" element={<Base64xImg />} />
       <Route path="/imgxbase64" element={<ImageToBase64 />} />
       <Route path="/imgxpdf" element={<ImageToPDF/>} />
+      <Route path="/pdfximg" element={<PdfToImage/>} />
+
+
       </Routes>
       
       

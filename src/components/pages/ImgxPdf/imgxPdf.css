@@ -1,0 +1,9 @@
+.convert-button {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #00856F;
+    color: #ffffff;
+    cursor: pointer;
+}

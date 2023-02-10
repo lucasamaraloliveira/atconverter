@@ -1,48 +1,51 @@
-import React, { useState, useRef } from "react";
-import Logo from '../../../assets/logo.svg';
+import React, { useState } from "react";
+import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
+import './ImgxPdf.css';
+import Logo from '../../../assets/logo.svg';
 
-const ImageToPDF = ({ imageUrl }) => {
-  const [loading, setLoading] = useState(false);
-  const pdfRef = useRef(null);
+const ImageToPdfConverter = () => {
+const [image, setImage] = useState(null);
 
-  const handleDownload = async () => {
-    setLoading(true);
-    const pdf = new jsPDF();
-    const image = await loadImage(imageUrl);
-    pdf.addImage(image, "JPEG", 0, 0, pdf.internal.pageSize.getWidth(), pdf.internal.pageSize.getHeight());
-    pdf.save("image.pdf");
-    setLoading(false);
-  };
-
-  const loadImage = (url) => {
-    return new Promise((resolve, reject) => {
-      const image = new Image();
-      image.crossOrigin = "anonymous";
-      image.src = url;
-      image.onload = () => {
-        resolve(image);
-      };
-      image.onerror = (error) => {
-        console.error("Error loading image:", error);
-        reject(error);
-      };
-    });
-  };
-  
-  
-  
-  
-
-  return (
-    <div>
-        <img src={Logo} alt="" />
-        <h1>(Image x Base64)</h1>
-      <button onClick={handleDownload} disabled={loading}>
-        Download PDF
-      </button>
-    </div>
-  );
+const handleFileChange = (event) => {
+setImage(URL.createObjectURL(event.target.files[0]));
 };
 
-export default ImageToPDF;
+const handleUploadClick = () => {
+document.getElementById("file-input").click();
+};
+
+const handleConvertToPdf = () => {
+  if (!image) return;
+
+  html2canvas(document.querySelector("#capture"), { scale: 10 }).then((canvas) => {
+    const imgData = canvas.toDataURL("image/png");
+    const pdf = new jsPDF("p", "mm", "a4");
+    pdf.addImage(imgData, "PNG", -185, 0, 580, 311);
+pdf.save("image.pdf");
+
+  });
+};
+
+return (
+  <div>
+    <img src={Logo} alt="" />
+    <h1>(Image x PDF)</h1>
+    <label htmlFor="file-input">
+      <button type="button" className="custom-file-upload" onClick={handleUploadClick}>Escolha a imagem</button>
+    </label>
+    <input type="file" id="file-input" onChange={handleFileChange} />
+    {image && (
+      <div id="capture">
+        <img src={image} alt="captured" className="original-img" />
+      </div>
+    )}
+    {image && (
+      <button className="btn-download" onClick={handleConvertToPdf}>Baixar</button>
+    )}
+  </div>
+);
+
+};
+
+export default ImageToPdfConverter;
