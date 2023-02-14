@@ -1,0 +1,134 @@
+footer {
+    color: #9a9898;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 50px;
+}
+@media (max-width: 1920px) {
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 19%;
+    }
+
+}
+@media (max-width: 1366px) {
+
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 28%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 25%;
+    }
+
+}
+@media (max-width: 1114px) {
+
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 32%;
+    }
+
+}
+
+@media (max-width: 884px) {
+
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 42%;
+    }
+
+}
+
+@media (max-width: 835px) {
+
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 44%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 45%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .footer-color {
+        padding: 1px ;
+    }
+    .social-media {
+        margin-right: 47%;
+    } 
+}
+@media (max-width:428px){
+    .social-media {
+        width: 400px;
+        text-align: center;
+        margin-left: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+    }
+}
+
+
+@media (max-width: 415px) {
+    .social-media {
+        width: 400px;
+        text-align: center;
+        margin-left: 190px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+    }
+}
+@media (max-width: 360px) {
+    .social-media {
+        width: 400px;
+        text-align: center;
+        margin-left: 170px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+    }
+}
+@media (max-width: 320px) {
+    .social-media {
+        width: 400px;
+        text-align: center;
+        margin-left: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;        
+    }
+}
